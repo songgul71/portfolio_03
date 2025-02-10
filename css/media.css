@@ -261,14 +261,78 @@
 
 @media(max-width: 580px) {
 
-    /* features */
-    #features {display: none;}
+  /* features */
+  #features {display: none;}
 
-    /* footer */
-    #footer {padding: 20px 2% 30px;}
-    .f_top .f_logo img {width: 120px;}
-    .f_nav {display: none;}
-    .fnb {gap: 0; margin-bottom: 30px;}
-    .fnb li {width: calc((100% - 6px) / 3);}
-    .sns {position: absolute; top: 10px; right: 2%;}
+  /* business */
+  .tab_menu>ol li { padding: 3px 14px; font-size: 1.6rem;}
+
+  /* footer */
+  #footer {padding: 20px 2% 30px;}
+  .f_top .f_logo img {width: 120px;}
+  .f_nav {display: none;}
+  .fnb {gap: 0; margin-bottom: 30px;}
+  .fnb li {width: calc((100% - 6px) / 3);}
+  .sns {position: absolute; top: 10px; right: 2%;}
+}
+
+@media(max-width: 490px) {
+
+  /* business */
+  #business .tab_menu>ol {flex-wrap: wrap;}
+  #business .tab_menu>ol li {width: calc(100% / 3);}
+  #business .tab_menu>ol li:nth-child(4) {padding-left: 0;}
+  #business .left_box li {height: 350px;}
+
+  /* story */
+  #story .right_box .img_box {height: 200px;}
+  #story .txt_box {padding: 15px 12px;}
+  #story .controller strong {font-size: 1.4rem; width: 28px; height: 28px; line-height: 28px;}
+  #story .page_bar {width: 80%; left: 20%;}
+
+  /* quick */
+  #quick ul li img {width: 25px; height: 25px; }
+  #quick ul li p { font-size: 1.6rem; font-weight: 400;}
+
+  /* footer */
+  .fnb { display: block; margin-bottom: 20px;}
+  .fnb li {width: 100%;}
+  .address address {margin-bottom: 8px;}
+}
+
+@media(max-width: 420px) {
+  
+  h2{ font-size: 3.3rem;}
+  #header .gnb>li>a.ham {font-size: 3.3rem;}
+
+  #story .right_box .img_box {height: 180px;}
+  #story .txt_box {padding: 12px 10px;}
+}
+
+@media(max-width: 368px) {
+
+  h2 {font-size: 2.8rem;}
+  #header .gnb>li>a.ham {font-size: 3rem;}
+  
+  #business .left_box li {height: 300px;}
+  #business .page_bar { height: 2px; }
+ 
+  /*  */
+  .left_box li .txt_box p.img_tit {font-size: 1.6rem; margin-bottom: 3px;}
+  .left_box li .txt_box p.txt {font-size: 1.4rem; opacity: 0.8;}
+  .right_box h4 {font-size: 2.2rem;}
+  .right_box h4+p {margin-top: 12px; font-size: 1.2rem;}
+  .right_box p+a .link_btn {font-size: 1.4rem; width: auto;}
+
+  /*  */
+  #story .tit a {width: auto;}
+  #story .right_box .img_box {height: 135px ;}
+  #story .txt_box {padding: 8px 10px;}
+  #story .page_bar {width: 77%; left: 24%;}
+  #story .tit a .more { font-size: 1.4rem;}
+
+  /*  */
+  #quick ul li {width: 100%;}
+
+
 }

@@ -15,7 +15,8 @@ body{ overflow-x: hidden; font-family: var(--main-font); color: #222; font-weigh
   
 .inner {max-width: 1800px; margin: 0 auto; padding: 0 2%; overflow-x: hidden;}
 
-h2 {color: var(--orange); font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
+h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
+/* color: var(--orange); */
 
 .swiper-button-prev, .swiper-button-next {display: none;}
 
@@ -94,13 +95,13 @@ h2 {color: var(--orange); font-size: 5rem; font-weight: 700;  margin-bottom: 38p
 
 /* --- business --- */
 #business {padding: 120px 0 ;}
-#business h2 {color: var(--blue);}
+/* #business h2 {color: var(--blue);} */
 
 .tab_menu>ol {display: flex; align-items: center; margin-bottom: 35px;}
 
 .tab_menu>ol li {padding: 8px 20px; font-size: 2.2rem; font-weight: 500;}
 .tab_menu>ol li:first-child {padding:8px 20px 8px 0;}
-.tab_menu>ol li:hover, .tab_menu>ol li.active {color: var(--blue);}
+.tab_menu>ol li:hover, .tab_menu>ol li.active {color: var(--orange);}
 
 .tab_con {position: relative;}
 .tab_con .content { position: relative; display: flex; flex-wrap: wrap; gap: 16px; align-items: center;}
@@ -120,20 +121,20 @@ h2 {color: var(--orange); font-size: 5rem; font-weight: 700;  margin-bottom: 38p
 .right_box h4+p{ font-size: 1.8rem; font-weight: 400; margin: 50px 0 110px; word-break: keep-all;}
 
 .right_box p+a { position: relative; display: block; width: 20%; padding: 12px 0; overflow: hidden; font-size: 1.8rem;}
-.right_box p+a .link_btn{ color: var(--blue); white-space: nowrap;}
+.right_box p+a .link_btn{ color: var(--orange); white-space: nowrap;}
 .right_box p+a .go_link {  font-size: 2.2rem; font-weight: 500; opacity: 0; position: absolute; left: 15%; top: 46%; transform: translateY(-50%); transition: all 0.5s;}
 
-.right_box p+a:hover .link_btn{color: var(--blue);}
-.right_box p+a:hover .go_link { opacity:1; left: 79%; color: var(--orange);}
+.right_box p+a:hover .link_btn{color: var(--orange);}
+.right_box p+a:hover .go_link { opacity:1; left: 79%; color: var(--blue);}
 
 #business .page_bar { padding-right: 2%; position: absolute; top: 98%; left: 63%; width: 36%; height: 3px; background: #eee;}
-#business .page_bar span {background: var(--blue);}
+#business .page_bar span {background: var(--orange);}
 
 /* --- story --- */
 #story {padding: 80px 0 80px 2%;}
 
 #story .tit {display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px;}
-#story .tit h2 {margin: 0; color: var(--orange);}
+#story .tit h2 {margin: 0;}
 #story .tit a { position: relative; display: block; text-align: right; width: 20%; padding: 12px 2%; overflow: hidden; font-size: 1.8rem;}
 #story .tit a .more{ color: var(--orange); transition: all 0.5s;}
 #story .tit a .go_link { font-size: 2.2rem; font-weight: 500; opacity: 0; position: absolute; right: 9%; top: 46%; transform: translateY(-50%); transition: all 0.5s;}
@@ -173,7 +174,7 @@ h2 {color: var(--orange); font-size: 5rem; font-weight: 700;  margin-bottom: 38p
 
 /* --- about --- */
 #about {padding: 48px 0 108px; background: url(../img/main/bg_about.png) no-repeat center / cover;}
-#about h2 {color: var(--green);}
+/* #about h2 {color: var(--green);} */
 
 #about .container {display: flex; flex-wrap: wrap; gap: 10px; margin: 0 auto;}
 #about .content { display: block; width: calc((100% - 20px) / 3) ; height: 525px; padding: 65px 60px; border: 2px solid #fdfdfd; background: rgba(253, 253, 253, 0.6); backdrop-filter: blur(3px); border-radius: 3px; transition: all 0.5s;}
@@ -197,8 +198,8 @@ h2 {color: var(--orange); font-size: 5rem; font-weight: 700;  margin-bottom: 38p
 #quick ul li:hover .icon { display: none;}
 #quick ul li .icon_b { display: none;} 
 
-#quick ul li:hover a {color: var(--blue);}
-#quick ul li:hover { border-color: var(--blue);}
+#quick ul li:hover a {color: var(--orange);}
+#quick ul li:hover { border-color: var(--orange);}
 
 /* --- footer ---*/
 #footer { position: relative; padding: 60px 2% 80px; font-size: 1.4rem; color: var(--gray); border-top: 3px solid rgba(51, 102, 204, 0.3); background: #fcfcfc;}
