@@ -14,8 +14,8 @@ $(function () {
   // gnb_depth3
   $('.depth3').hide()
 
-  $('.depth2>li').mousedown(function () {
-    $('.depth3').stop().slideDown()
+  $('.depth2>li').click(function () {
+    $(this).find('.depth3').stop().slideDown()
   })
 
   // Our Story -뉴스 스와이퍼
@@ -24,7 +24,7 @@ $(function () {
     loop: true,
     centeredSlides: true,
     speed: 1000,
-    slidesPerView: 3, //모바일 기준
+    slidesPerView: 2, //모바일 기준
     spaceBetween: 20, //모바일 기준
 
     autoplay: {
@@ -42,8 +42,15 @@ $(function () {
       type: "progressbar", // "bullets", "fraction", "progressbar"
       clickable: true, // false(기본값) 클릭가능여부
     },
-  });
 
+    breakpoints: {
+      650: { //min-width 기준
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
+
+  });
 
   // Family_Site -푸터 모달
   $('#footer .area_family_site, .close').hide()
@@ -71,6 +78,7 @@ $(function () {
     centeredSlides: true,
     speed: 1000,
     slidesPerView: 1, //모바일 기준
+    spaceBetween: 20, //모바일 기준
 
     autoplay: {
       delay: 3000,
@@ -87,9 +95,8 @@ $(function () {
       type: "progressbar", // "bullets", "fraction", "progressbar"
       clickable: true, // false(기본값) 클릭가능여부
     },
+
   });
-
-
 
   // ====================================================
   // // features- 최상단 주 정보 노출
