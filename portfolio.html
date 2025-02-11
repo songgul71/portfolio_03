@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>고소영 포트폴리오</title>
+  <title>고소영 포트폴리오 : 디자인</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -13,13 +13,11 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <!-- <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"> -->
-
-  <link rel="stylesheet" href="assets/css/font.css">
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +38,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="portfolio-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -50,69 +48,56 @@
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Portfolio</h1>
       </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <!-- <li><a href="resume.html">활동내역</a></li> -->
+          <!-- <li><a href="services.html">Services</a></li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
     </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <!-- <li><a href="resume.html">활동내역</a></li> -->
-        <!-- <li><a href="services.html">Services</a></li> -->
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
-
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <div class="main_img">
-        <img src="assets/image/main_bg.png" alt="BX 작업물 명함 목업" data-aos="fade-in">
-      </div>
-
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h2>GO SOYEONG</h2>
-        <p>저는 <span class="typed" data-typed-items="성장을 지향합니다., 사용자 경험을 통해 이론을 전달하고자합니다., 디블리셔입니다.">성장을
-            지향합니다.</span><span class="typed-cursor typed-cursor--blink"></span></p>
-        <!-- <div class="social-links">
-          <a href="#"><i class="bi bi-twitter-x"></i></a>
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-instagram"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-        </div> -->
-      </div>
-    </section><!-- /Hero Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Page Title -->
-      <div class="page-title" data-aos="fade">
-        <div class="heading">
-          <div class="container">
-            <div class="row d-flex justify-content-center text-center">
-              <div class="col-lg-8 content">
-                <h2>Portfolio</h2>
-                <p class="mb-0">마우스 호버시 나타나는 아이콘을 통해 미리보기 및 해당 작품 페이지로 이동이 가능합니다.
-                  <!--  전반적인 저의 디자인 및 퍼블리싱 능력을 보여드릴 수 있는
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>디자인 작업물</h1>
+              <p class="mb-0">마우스 호버시 나타나는 아이콘을 통해 미리보기 및 해당 작품 페이지로 이동이 가능합니다.
+                <!--  전반적인 저의 디자인 및 퍼블리싱 능력을 보여드릴 수 있는
                 <br>웹 & 앱 & 콘텐츠 포트폴리오입니다. -->
-                </p>
-              </div>
+              </p>
             </div>
           </div>
         </div>
-      </div><!-- End Page Title -->
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
 
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters tab_menu" data-aos="fade-up" data-aos-delay="100">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-product">Web</li>
             <li data-filter=".filter-app">App</li>
@@ -268,179 +253,11 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <div class="content">
-          <span class="description-title">Skills</span>
-        </div>
-      </div> -->
-      <!-- End Section Title -->
-
-      <!-- Page Title -->
-      <div class="page-title" data-aos="fade">
-        <div class="heading">
-          <div class="container">
-            <div class="row d-flex justify-content-center text-center">
-              <div class="col-lg-8 content">
-                <h2>SKILLS</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Page Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Figma</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Illustrator</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JQUERY(JS)</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Page Title -->
-      <div class="page-title" data-aos="fade">
-        <div class="heading">
-          <div class="container">
-            <div class="row d-flex justify-content-center text-center">
-              <div class="col-lg-8 content">
-                <h2>ABOUT</h2>
-                <p class="mb-0 keep_all">
-                  사용자 경험과 디자인에 추구하는 가치를 녹여낼 수 있는 디블리셔가 되겠습니다.
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div><!-- End Page Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/image/profile_img.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-8 content col_txt">
-
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <p><span>2024.03~2024.10</span> <br>[부산IT교육센터] 반응형 웹 & 앱기반 디자인 및 <br> 디지털 콘텐츠 기획 수료</p>
-                  </li>
-
-                  <li>
-                    <p><span>2020.07~2020.09</span> <br>[서울] 더 스튜디오 케이 단기 실습생</p>
-                  </li>
-
-                  <li>
-                    <p><span>2018.03~2023.08</span> <br>[부산] 경성대학교 재학</p>
-                  </li>
-                  <li>
-                    <p><span>2015.03~2018.02</span> <br>[포항] 세명고등학교 재학</p>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-lg-6">
-                <!-- <h3> 팀프로젝트 </h3> -->
-                <ul>
-                  <li>
-                    <p><span>2024.03~2024.10</span> [협업_APP] <br><span class="company">(주)테렌즈</span></p>
-                  </li>
-
-                  <li>
-                    <p><span>2024.03~2024.10</span> [협업_WEB] <br><span class="company">(주)테렌즈</span></p>
-                  </li>
-
-                  <li>
-                    <p><span>2022.09~2022.12</span> [협업_전시] <br><span class="company">경성대학교 소강당 캡스톤 -'가치전시회'</span> </p>
-
-                  </li>
-                  <li>
-                    <p><span>2022.07~2022.08</span> [협업_전시]<br><span class="company"> 부산 가치 전시회 -의류 업싸이클링</span></p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
   </main>
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">PORTFOLIO</h3>
+      <h3 class="sitename">Portfolio</h3>
       <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었으며, 사용된 일부 이미지 및 폰트는 별도의 출처가 있음을 밝힙니다.</p>
       <!-- <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-facebook"></i></a>
@@ -458,7 +275,7 @@
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a class="boot" href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
