@@ -21,16 +21,15 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 .swiper-button-prev, .swiper-button-next {display: none;}
 
 /* --- header --- */
-#header { padding: 0 2%; width: 100vw; 
+#header { width: 100vw; 
   /* --100vh = header h값 none => position 부여 */ 
   position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 99;}
 
-#header .hd_category { width: 100%; display: flex; gap: 20px; align-items: center; justify-content: space-between;}
+#header .hd_category { position: relative; width: 100%; display: flex; gap: 20px; align-items: center; justify-content: space-between;}
 
 #header h1 {width: 200px;}
 #header h1 a{display: block;}
-#header h1 img{width: 100%;}
-#header h1 img.mobile {display: none;}
+#header h1>a>img {padding-left: 2%;}
 
 /* --util */
 #header .area_util { padding-top: 12px; max-width: 1800px; margin: 0 auto;}
@@ -40,13 +39,13 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 #header .util_top>li:hover>a { color: var(--blue); background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(1px); border: 1px solid rgba(255, 255, 255, 0.6);}
 
 /* --gnb */
-#header nav {width: 100%;}
-#header .gnb { text-align: center; display: flex; align-items: center; justify-content: flex-end;}
+#header nav {width: 100%; }
+#header .gnb { padding-right: 5%; text-align: center; display: flex; align-items: center; justify-content: flex-end;}
 #header .gnb>li {margin: 2px;}
 #header .gnb>li>a{ width: 100%; padding: 8px 26px; font-size: 2rem; font-weight: 500; color: #fff; white-space: nowrap;}
 
 #header .gnb>li:hover>a { color: var(--orange);}
-#header .gnb>li>a.ham { font-size: 4rem; }
+#header a.ham {position: absolute; right: 1%; top: 0; font-size: 4rem; padding: 2px; font-weight: 500; color: #fff;}
 
 /* --depth2 */
 #header .depth2_wrap { width: 100%; padding: 120px 2% ; position: absolute; top: 0; right: 0; 
