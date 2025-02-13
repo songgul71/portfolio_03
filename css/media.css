@@ -12,6 +12,7 @@
   #header .gnb_wrap{padding: 0;}
   #header .gnb>li>a {font-size: 0;}
   #header a.ham { top: -5px;}
+  #header .depth2_wrap {background: #fff; opacity: 1;}
 }
 
 @media(max-width: 1100px) {
