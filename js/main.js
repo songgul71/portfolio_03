@@ -19,38 +19,53 @@ $(function () {
   })
 
   // Our Story -뉴스 스와이퍼
-  const article = new Swiper(".article", {
+  setInterval(() => {
+    $(".wrapper").delay(2000).animate({
+      marginTop: -180
+    });
+    $(".wrapper").delay(2000).animate({
+      marginTop: -360
+    });
+    $(".wrapper").delay(2000).animate({
+      marginTop: -360
+    })
+    $(".wrapper").delay(2000).animate({
+      marginTop: -0
+    });
+  },);
 
-    loop: true,
-    centeredSlides: true,
-    speed: 1000,
-    slidesPerView: 2, //모바일 기준
-    spaceBetween: 20, //모바일 기준
+  // const article = new Swiper(".article", {
 
-    autoplay: {
-      delay: 2000,
-      disableOnIneraction: false,
-    },
+  //   loop: true,
+  //   centeredSlides: true,
+  //   speed: 1000,
+  //   slidesPerView: 2, //모바일 기준
+  //   spaceBetween: 20, //모바일 기준
 
-    navigation: {
-      nextEl: ".next",
-      prevEl: ".right",
-    },
+  //   autoplay: {
+  //     delay: 2000,
+  //     disableOnIneraction: false,
+  //   },
 
-    pagination: { // 슬라이드 갯수(불릿) - 태그추가
-      el: ".swiper-pagination", //el=요소
-      type: "progressbar", // "bullets", "fraction", "progressbar"
-      clickable: true, // false(기본값) 클릭가능여부
-    },
+  //   navigation: {
+  //     nextEl: ".next",
+  //     prevEl: ".right",
+  //   },
 
-    breakpoints: {
-      650: { //min-width 기준
-        slidesPerView: 3,
-        spaceBetween: 30,
-      }
-    }
+  //   pagination: { // 슬라이드 갯수(불릿) - 태그추가
+  //     el: ".swiper-pagination", //el=요소
+  //     type: "progressbar", // "bullets", "fraction", "progressbar"
+  //     clickable: true, // false(기본값) 클릭가능여부
+  //   },
 
-  });
+  //   breakpoints: {
+  //     650: { //min-width 기준
+  //       slidesPerView: 3,
+  //       spaceBetween: 30,
+  //     }
+  //   }
+
+  // });
 
   // Family_Site -푸터 모달
   $('#footer .area_family_site, .close').hide()
