@@ -78,7 +78,8 @@
   /* features */
   #features h3 {font-size: 3.5rem;}
   #features p{font-size: 1.8rem;}
-  #features p+span {font-size: 1.6rem;}
+  #features p+span, .feature_con .date>span {font-size: 1.6rem;}
+  .feature_con .slide:nth-child(2) a {gap: 30px;}
   #features .controller strong.btn { font-size: 1.4rem;}
 
   /* business */

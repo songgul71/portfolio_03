@@ -78,19 +78,28 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 #main_visual .m_main {display: none;}
 
 /* --- features --- */
-#features h3 {font-size: 4rem; font-weight: 700;}
-#features p {font-size: 2rem;}
-#features p+span { font-size: 1.8rem; color: var(--gray); margin-right: 30px;}
+#features h3 { margin-right: 60px; font-size: 4rem; font-weight: 700; display: inline-block}
 
-.feature_con {position: relative; height: 180px; overflow: hidden;}
-.feature_con>ul { width: 100%;}
-.feature_con>ul>li { width: 100%; height: 100%; }
-.feature_con>ul>li a { display: flex; padding: 60px 0; justify-content: space-between; align-items: center;}
+.feature_con {width: 100%; height: 180px; overflow: hidden;}
+.feature_con .slide { position: relative;  width: 100%; height: 180px; }
+.feature_con .slide a { display: block; padding: 60px 0; }
 
-#features .controller {position: absolute; width: 100%; height: 100%; top: 0; right: 0; }
+.feature_con p {font-size: 2rem; display: inline-block; } 
+.feature_con .slide strong {font-size: 3.5rem; font-weight: 600;}
+.feature_con span { font-size: 1.8rem; color: var(--gray); margin-right: 30px;}
+.feature_con .date {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+
+.feature_con .slide:nth-child(2) a {display: flex; align-items: center; gap: 80px;}
+.feature_con .area_txt p {display: block; }
+.feature_con .area_txt span {margin-left: 8px;}
+.feature_con .date {display: inline-block;}
+.feature_con .date>span {display: block;}
+
+.feature_con::before { display: block; content: ""; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 2px; color: #888;}
+/* #features .controller {position: absolute; width: 100%; height: 100%; top: 0; right: 0; }
 #features .controller .btn_box { padding: 60px 0; height: 100%; text-align: right;}
 #features .controller strong.btn { display: block; font-size: 1.8rem; font-weight: 700; }
-#features .page_bar { width: 100%; height: 2px; bottom:0; background: #eee;}
+#features .page_bar { width: 100%; height: 2px; bottom:0; background: #eee;} */
 
 /* --- business --- */
 #business {padding: 120px 0 ;}
