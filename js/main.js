@@ -34,38 +34,38 @@ $(function () {
     });
   },);
 
-  // const article = new Swiper(".article", {
+  const article = new Swiper(".article", {
 
-  //   loop: true,
-  //   centeredSlides: true,
-  //   speed: 1000,
-  //   slidesPerView: 2, //모바일 기준
-  //   spaceBetween: 20, //모바일 기준
+    loop: true,
+    centeredSlides: true,
+    speed: 1000,
+    slidesPerView: 2, //모바일 기준
+    spaceBetween: 20, //모바일 기준
 
-  //   autoplay: {
-  //     delay: 2000,
-  //     disableOnIneraction: false,
-  //   },
+    autoplay: {
+      delay: 2000,
+      disableOnIneraction: false,
+    },
 
-  //   navigation: {
-  //     nextEl: ".next",
-  //     prevEl: ".right",
-  //   },
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".right",
+    },
 
-  //   pagination: { // 슬라이드 갯수(불릿) - 태그추가
-  //     el: ".swiper-pagination", //el=요소
-  //     type: "progressbar", // "bullets", "fraction", "progressbar"
-  //     clickable: true, // false(기본값) 클릭가능여부
-  //   },
+    pagination: { // 슬라이드 갯수(불릿) - 태그추가
+      el: ".swiper-pagination", //el=요소
+      type: "progressbar", // "bullets", "fraction", "progressbar"
+      clickable: true, // false(기본값) 클릭가능여부
+    },
 
-  //   breakpoints: {
-  //     650: { //min-width 기준
-  //       slidesPerView: 3,
-  //       spaceBetween: 30,
-  //     }
-  //   }
+    breakpoints: {
+      650: { //min-width 기준
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
 
-  // });
+  });
 
   // Family_Site -푸터 모달
   $('#footer .area_family_site, .close').hide()
