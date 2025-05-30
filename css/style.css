@@ -81,19 +81,17 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 #features h3 { margin-right: 60px; font-size: 4rem; font-weight: 700; display: inline-block}
 
 .feature_con {width: 100%; height: 180px; overflow: hidden;}
-.feature_con .slide { position: relative;  width: 100%; height: 180px; }
-.feature_con .slide a { display: block; padding: 60px 0; }
+.feature_con .slide { position: relative;  width: 100%; height: 180px;}
+.feature_con .slide a { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: baseline; padding: 50px 0 10px;}
+/* padding: 80px 0; */
 
 .feature_con p {font-size: 2rem; display: inline-block; } 
 .feature_con .slide strong {font-size: 3.5rem; font-weight: 600;}
 .feature_con span { font-size: 1.8rem; color: var(--gray); margin-right: 30px;}
-.feature_con .date {position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
 
-.feature_con .slide:nth-child(2) a {display: flex; align-items: center; gap: 80px;}
+.feature_con .slide:nth-child(2) a {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
 .feature_con .area_txt p {display: block; }
-.feature_con .area_txt span {margin-left: 8px;}
-.feature_con .date {display: inline-block;}
-.feature_con .date>span {display: block;}
+.feature_con .area_txt span {padding-left: 3px; display: inline-block;}
 
 .feature_con::before { display: block; content: ""; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 2px; color: #888;}
 /* #features .controller {position: absolute; width: 100%; height: 100%; top: 0; right: 0; }
@@ -103,11 +101,10 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 
 /* --- business --- */
 #business {padding: 120px 0 ;}
-/* #business h2 {color: var(--blue);} */
 
 .tab_menu>ol {display: flex; align-items: center; margin-bottom: 35px;}
 
-.tab_menu>ol li {padding: 8px 20px; font-size: 2.2rem; font-weight: 500;}
+.tab_menu>ol li {padding: 8px 20px; font-size: 2.2rem; font-weight: 500; cursor: pointer;}
 .tab_menu>ol li:first-child {padding:8px 20px 8px 0;}
 .tab_menu>ol li:hover, .tab_menu>ol li.active {color: var(--orange);}
 
@@ -130,9 +127,9 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 
 .right_box p+a { position: relative; display: block; width: 20%; padding: 12px 0; overflow: hidden; font-size: 1.8rem;}
 .right_box p+a .link_btn{ color: var(--orange); white-space: nowrap;}
-.right_box p+a .go_link {  font-size: 2.2rem; font-weight: 500; opacity: 0; position: absolute; left: 15%; top: 46%; transform: translateY(-50%); transition: all 0.5s;}
+.right_box p+a .go_link {  font-size: 2.2rem; font-weight: 500; opacity: 0; position: absolute; left: 15%; top: 47%; transform: translateY(-50%); transition: all 0.5s;}
 
-.right_box p+a:hover .link_btn{color: var(--orange);}
+.right_box p+a:hover .link_btn{color: var(--blue);}
 .right_box p+a:hover .go_link { opacity:1; left: 79%; color: var(--blue);}
 
 #business .page_bar { padding-right: 2%; position: absolute; top: 98%; left: 63%; width: 36%; height: 3px; background: #eee;}
@@ -156,7 +153,7 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 #story .right_box {width: 80%; overflow: hidden;}
 #story .right_box .img_box {font-size: 0; width: 100%; height: 272px ;}
 #story .right_box .img_box img {width: 100%;  height: 100%; object-fit: cover;}
-#story .right_box ol>li {width: calc((100% - 40px) / 3);}
+#story .right_box ol>li {width: calc((100% - 40px) / 3); border-radius: 2px 2px 50px 2px; overflow: hidden;}
 
 #story .txt_box {padding: 15px; border-radius: 0 0 50px 0; border: 1px solid #eee; border-top: 0;}
 #story .txt_box .news_tit{ font-size: 1.8rem; width: 86%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -165,8 +162,10 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 #story .controller {position: relative; width: 100%; height: 44px; margin-top: 37px; padding-right: 2%;}
 
 #story .controller .btn_box {width: calc( 10% - 14px ); display: flex; gap: 15px;}
-#story .controller strong { width: 44px; height: 44px; text-align: center; line-height: 45px; border: 1px solid #eee; border-radius: 50%; transition: all 0.5s;}
-
+#story .controller strong { color: #888;   aspect-ratio: 1/1; width: 44px; height: 44px; text-align: center;  border: 1px solid #eee; border-radius: 50%; cursor: pointer; transition: all 0.5s;}
+.bi::before, [class*=" bi-"]::before, [class^=bi-]::before{
+ font-weight: 600 !important; line-height: 45px !important;
+}
 #story .btn_box strong:hover {background: var(--orange); color: #fff; border-color: var(--orange);}
 
 #story .page_bar {width: 88%; height: 2px; position: absolute; top: 50%; transform: translateY(-50%); left: 10%; background: #eee; }
@@ -241,7 +240,7 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 /* f_info */
 .f_info {  width: calc(100% / 6.5); height: 100%; order: 2;}
 
-.f_info .select {width: 100%; height: 100%; padding: 10px 32px; border: 1px solid var(--gray); border-radius: 1px; }
+.f_info .select {width: 100%; height: 100%; padding: 10px 32px; border: 2px solid var(--gray); border-radius: 1px; }
 .f_info .select:hover {border-color: var(--green); color: var(--green); }
 
 .f_info .select span {float: right; font-size: 1.8rem;}
@@ -268,5 +267,5 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 
 /* go_top */
 .area_go_top { position: fixed; bottom: 20px; right: 2%; font-size: 0; z-index: 1;}
-.go_top { display: block; line-height: 100%; width: 43px; height: 43px; border-radius: 50%; color: var(--orange); font-size: 4.3rem; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(3px);}
+.go_top { display: block; line-height: 100%; width: 55px; height: 55px; border-radius: 50%; color: var(--orange); font-size: 5.5rem; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(3px); transition: all 0.5s;}
 .go_top:hover { color: var(--blue); }
