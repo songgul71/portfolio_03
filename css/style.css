@@ -82,7 +82,7 @@ h2 { font-size: 5rem; font-weight: 700;  margin-bottom: 38px;}
 
 .feature_con {width: 100%; height: 180px; overflow: hidden;}
 .feature_con .slide { position: relative;  width: 100%; height: 180px;}
-.feature_con .slide a { display: flex; justify-content: space-between; flex-wrap: wrap; align-items: baseline; padding: 50px 0 10px;}
+.feature_con .slide a { display: flex; flex-wrap: wrap; align-items: baseline; padding: 50px 0 10px;}
 /* padding: 80px 0; */
 
 .feature_con p {font-size: 2rem; display: inline-block; } 
