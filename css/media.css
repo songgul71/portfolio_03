@@ -24,7 +24,7 @@
   #header .gnb_wrap>li {width: calc(100% / 4);}
   #header .gnb_wrap>li:nth-child(n+5) {margin-top: 20px;}
   #header .gnb_wrap>li>a {text-align: center;} 
-  #header .depth2_wrap {padding: 80px 2% 80px 10%;}
+  #header .depth2_wrap { height:100vh; padding: 80px 2% 80px 10%;}
   #header .depth2_wrap button.exit {top: 2%;}
   .gnb_wrap .depth2>li>a {font-size: 1.6rem;}
   #header .gnb_wrap .depth3>li>a {font-size: 1.4rem;}
