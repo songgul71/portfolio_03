@@ -223,7 +223,9 @@
   .address address{width: 100%;}
 
 }
-
+@media(max-width: 670px) {
+  #features {display:none;}
+}
 @media(max-width: 630px) {
   
   /* header */
